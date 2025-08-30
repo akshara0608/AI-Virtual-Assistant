@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Shopping Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><span class="highlight">Shop</span>Buddy AI</h1>
+            <p>Your personal AI-powered shopping assistant.</p>
+        </header>
+
+        <div class="chat-window">
+            <div id="chat-messages">
+                <div class="message bot-message">
+                    <p>Hello! I'm ShopBuddy AI. How can I help you shop today?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Type your message here...">
+                <button id="send-button">Send</button>
+            </div>
+        </div>
+
+        <div id="suggestions" class="suggestions">
+            <h2>Recommended for You</h2>
+            <div id="product-list" class="product-list">
+                <!-- Product suggestions will be loaded here -->
+            </div>
+            <button id="add-to-cart-button" class="action-button" style="display: none;">Add Selected to Cart</button>
+        </div>
+
+        <div id="cart-summary" class="cart-summary" style="display: none;">
+            <h2>Your Cart Summary</h2>
+            <ul id="cart-items">
+                <!-- Cart items will be loaded here -->
+            </ul>
+            <p class="total">Total: <span id="cart-total">₹0.00</span></p>
+            <button class="action-button">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
